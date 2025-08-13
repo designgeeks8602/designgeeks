@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>디자인긱스</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: 'Noto Sans KR', sans-serif; color: #333;}
+    header {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header video {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      display: block;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .blog-button {
+      display: block;
+      margin: 30px auto;
+      max-width: 320px;
+      width: 90%;
+    }
+    footer {
+      background-color: #f2f2f2;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .request-video {
+      width: 100%;
+      max-width: 533px; /* 기존 800px의 2/3 */
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <video autoplay muted loop playsinline>
+      <source src="./250813_main_video.mp4" type="video/mp4">
+    </video>
+  </header>
+
+  <section>
+    <h2>회사 소개</h2>
+    <p>
+      디자인긱스는 2010년에 설립된 디자인 전문 에이전시 회사입니다. 기업, 관공서, 문화예술계 등의 분야에서 홍보물 제작, 디자인, 기획을 아우르고 있습니다. 브로슈어&카탈로그, 포스터, 팜플렛, 책자, CI/BI 등 다양한 디자인 프로젝트를 수행하고 있습니다. 아울러 박물관과 전시관, 기관을 대상으로 교육 컨텐츠 개발 및 체험활동 교구재, 체험 키트를 기획 디자인하여 최종 제작까지 진행하고 있는 기획 디자인 회사 입니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>기업 업력</h2>
+    <p>2010년 창립 이후 다양한 공공 및 민간 프로젝트를 성공적으로 수행하며, 디자인 산업 전반에 기여하고 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>제작 의뢰 방법</h2>
+    <video autoplay muted loop playsinline class="request-video">
+      <source src="./250805_request_method.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section>
+    <h2>포트폴리오 & 교구재</h2>
+    <a href="https://blog.naver.com/designgeeks" target="_blank">
+      <img src="./250813_portfolio_button.png" alt="포트폴리오 버튼" class="blog-button">
+    </a>
+    <a href="https://blog.naver.com/geeks_edu" target="_blank">
+      <img src="./250813_gyoguge_button.png" alt="교구재 버튼" class="blog-button">
+    </a>
+  </section>
+
+  <footer>
+    <p>주소: 부산 동구 대영로243번길 40, 3층</p>
+    <p>전화: 051-242-8602</p>
+    <p>이메일: designgeeks@daum.net</p>
+  </footer>
+</body>
