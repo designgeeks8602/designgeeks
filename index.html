@@ -1,0 +1,169 @@
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>디자인긱스 | 디자인 전문 에이전시</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+  /* CSS 초기화 및 기본 스타일 */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR', sans-serif; color: #333; line-height: 1.6; }
+  h2 { text-align: center; margin-bottom: 40px; font-weight: 700; font-size: 2em; }
+ 
+
+  /* 헤더 스타일: 비디오가 잘리지 않고 전체가 보이도록 수정 */
+  header {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 비율 (9/16 = 0.5625) */
+  height: 0;
+  overflow: hidden;
+  }
+  header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 비디오가 잘리지 않고 전체가 보이도록 설정 */
+  z-index: -1;
+  }
+ 
+
+  /* 섹션 스타일: 패딩 및 최대 너비 재조정 */
+  section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  }
+  .intro-text {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+  }
+  /* 제작 의뢰 이미지 스타일 */
+  .request-images {
+  display: flex;
+  flex-direction: column; /* 이미지를 세로로 나열 */
+  align-items: center; /* 가운데 정렬 */
+  gap: 20px; /* 이미지 사이 간격 */
+  max-width: calc(800px * 2 / 3); /* 이전 비디오의 최대 가로 너비 참고 */
+  margin: 30px auto; /* 가운데 정렬 및 상하 여백 */
+  }
+  .request-images img {
+  width: 100%; /* 부모 요소의 최대 너비에 맞춰 이미지 크기 조정 */
+  height: auto;
+  display: block; /* 이미지 아래 불필요한 공간 제거 */
+  }
+ 
+
+  /* 버튼 컨테이너: Flexbox를 사용하여 가로 정렬 */
+  .portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  }
+  .portfolio-button {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s;
+  }
+  .portfolio-button img {
+  width: 100%;
+  height: auto;
+  }
+  .portfolio-button:hover {
+  transform: scale(1.05);
+  }
+ 
+
+  /* 푸터 스타일: 아이콘 및 레이아웃 개선 */
+  footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+  }
+  .footer-info p {
+  margin-bottom: 10px;
+  }
+  .footer-info i {
+  margin-right: 8px;
+  color: #555;
+  }
+ 
+
+  /* 반응형 디자인: 768px 이하 화면에서 버튼을 세로로 정렬 */
+  @media (max-width: 768px) {
+  h2 { font-size: 1.5em; }
+  section { padding: 50px 15px; }
+ 
+
+  /* 모바일에서 버튼을 세로로 정렬 */
+  .portfolio-container {
+  flex-direction: column;
+  gap: 15px;
+  }
+  }
+  </style>
+ </head>
+ <body>
+  <header>
+  <video autoplay muted loop playsinline>
+  <source src="./250813_main_video.mp4" type="video/mp4">
+  </video>
+  </header>
+ 
+
+  <section>
+  <h2>회사 소개</h2>
+  <div class="intro-text">
+  <p>디자인긱스는 2010년에 설립된 디자인 전문 에이전시 회사입니다. 기업, 관공서, 문화예술계 등의 분야에서 홍보물 제작, 디자인, 기획을 아우르고 있습니다. 브로슈어&카탈로그, 포스터, 팜플렛, 책자, CI/BI 등 다양한 디자인 프로젝트를 수행하고 있습니다.</p>
+  <p>아울러 박물관과 전시관, 기관을 대상으로 교육 컨텐츠 개발 및 체험활동 교구재, 체험 키트를 기획 디자인하여 최종 제작까지 진행하고 있는 기획 디자인 회사입니다.</p>
+  </div>
+  </section>
+ 
+
+  <section>
+  <h2>제작 의뢰 방법</h2>
+  <div class="request-images">
+  <img src="./250805_request_method1.jpg" alt="제작 의뢰 방법 1">
+  <img src="./250805_request_method2.jpg" alt="제작 의뢰 방법 2">
+  <img src="./250805_request_method3.jpg" alt="제작 의뢰 방법 3">
+  <img src="./250805_request_method4.jpg" alt="제작 의뢰 방법 4">
+  <img src="./250805_request_method5.jpg" alt="제작 의뢰 방법 5">
+  </div>
+  </section>
+ 
+
+  <section>
+  <h2>포트폴리오 & 교구재</h2>
+  <div class="portfolio-container">
+  <a href="https://blog.naver.com/designgeeks" target="_blank" class="portfolio-button">
+  <img src="./250813_portfolio_button.png" alt="포트폴리오 버튼">
+  </a>
+  <a href="https://blog.naver.com/geeks_edu" target="_blank" class="portfolio-button">
+  <img src="./250813_gyoguge_button.png" alt="교구재 버튼">
+  </a>
+  </div>
+  </section>
+ 
+
+  <footer>
+  <div class="footer-info">
+  <p><i class="fas fa-map-marker-alt"></i> 주소: 부산 동구 대영로243번길 40, 3층</p>
+  <p><i class="fas fa-phone"></i> 전화: 051-242-8602</p>
+  <p><i class="fas fa-envelope"></i> 이메일: designgeeks@daum.net</p>
+  </div>
+  </footer>
+ </body>
+ </html>
